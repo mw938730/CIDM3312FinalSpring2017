@@ -13,10 +13,10 @@ namespace Q400Calculator.Controllers
     public class ClimbDatasController : Controller
     {
         private readonly ApplicationDbContext _context;
-        private int Add(int x,int y)
-        {
-            return x + y;
-        }
+        //private int Add(int x,int y)
+        //{
+        //    return x + y;
+        //}
 
         public ClimbDatasController(ApplicationDbContext context)
         {
