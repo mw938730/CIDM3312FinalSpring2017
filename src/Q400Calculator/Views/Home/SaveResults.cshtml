@@ -1,0 +1,55 @@
+﻿@model FlightViewModel
+    
+@{
+    ViewData["Title"] = "Save Results";
+    List<FlapData> fd = Model.FlapData;
+}
+<div class="text-center">
+    <h1>Results</h1>
+
+    <h4>The Captain's Magic Black Book is here for you!</h4>
+    <hr />
+    V1 - @Model.V1 Knots -  the speed at which a takeoff can't be aborted
+    <br />
+    VR - @Model.Vr Knots -  rotation speed: the speed where the pilots lifts the aircraft into the sky
+    <br />
+    V2 - @Model.V2 Knots -  the speed at which the airplane can continue to fly even it an engine is lost
+    <br />
+    V FRI - @Model.VFri Knots - Flap reduction initiation speed:  the speed at which flaps are retracted after takeoff.
+    <br />
+    V CLMB - @Model.VClimb Knots - the seep(speed) at which the flaps are retracted and the aircraft climbs cleanly
+    <br />
+    V app - @Model.Vapp Knots - normal final approach speed for a given weight and flap setting
+    <br />
+    V ref - @Model.Vref Knots - a minimum speed with a safe margin above stall speed
+    <br />
+    V ga - @Model.Vga Knots - go around speed: speed at which the aircraft can safely begin to climb during a go around.
+
+    <br />
+    <button data-toggle="collapse" data-target="#hider">Show Details</button>
+
+    <div id="hider" class="collapse">
+    <p>The Vr is : @Model.Vr </p>
+    <p>Selected Weight Number (row# in db): @Model.SelectedWeightNumber</p>
+    <p>Rain: @Model.Rain</p>
+    <p>Icing: @Model.Icing</p>
+    <p>Snow: @Model.Snow</p>
+    <p>TakeoffFlaps: @Model.TakeoffFlaps</p>
+    <p>LandingFlaps: @Model.LandingFlaps</p>
+    <p>Icing: @Model.Icing</p>
+    <p>WeightRounded: @Model.RealWeight</p>
+    <p>LandingWeight = @Model.LandingWeight</p>
+    <p>The Vfri is: @Model.VFri</p>
+    <p>The V Climb is: @Model.VFri</p>
+    <p>The V2 = @Model.V2</p>
+    <p>The V ref is: @Model.Vref</p>
+    <p>The V app is: @Model.Vapp</p>
+    <p>the V ga is: @Model.Vga</p>
+    <p>The Altitude is : @Model.RealAltitude</p>
+    <p>The Temperature is : @Model.OutsideAirTemp</p>
+    <p>The Boolean IsTailwind is : @Model.IsTailwind</p>
+    <p>The Captain's Name is : @Model.PilotName</p>
+
+    </div>
+</div>
+

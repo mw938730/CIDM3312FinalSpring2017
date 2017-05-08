@@ -1,0 +1,203 @@
+@model Q400Calculator.Models.FlapData
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>FlapData</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Cold0V2" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Cold0V2" class="form-control" />
+                <span asp-validation-for="Cold0V2" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cold0Vr" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Cold0Vr" class="form-control" />
+                <span asp-validation-for="Cold0Vr" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cold10000V2" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Cold10000V2" class="form-control" />
+                <span asp-validation-for="Cold10000V2" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cold10000Vr" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Cold10000Vr" class="form-control" />
+                <span asp-validation-for="Cold10000Vr" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cold2000V2" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Cold2000V2" class="form-control" />
+                <span asp-validation-for="Cold2000V2" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cold2000Vr" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Cold2000Vr" class="form-control" />
+                <span asp-validation-for="Cold2000Vr" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cold4000V2" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Cold4000V2" class="form-control" />
+                <span asp-validation-for="Cold4000V2" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cold4000Vr" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Cold4000Vr" class="form-control" />
+                <span asp-validation-for="Cold4000Vr" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cold6000V2" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Cold6000V2" class="form-control" />
+                <span asp-validation-for="Cold6000V2" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cold6000Vr" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Cold6000Vr" class="form-control" />
+                <span asp-validation-for="Cold6000Vr" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cold8000V2" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Cold8000V2" class="form-control" />
+                <span asp-validation-for="Cold8000V2" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Cold8000Vr" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Cold8000Vr" class="form-control" />
+                <span asp-validation-for="Cold8000Vr" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Hot0V2" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Hot0V2" class="form-control" />
+                <span asp-validation-for="Hot0V2" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Hot0Vr" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Hot0Vr" class="form-control" />
+                <span asp-validation-for="Hot0Vr" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Hot10000V2" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Hot10000V2" class="form-control" />
+                <span asp-validation-for="Hot10000V2" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Hot10000Vr" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Hot10000Vr" class="form-control" />
+                <span asp-validation-for="Hot10000Vr" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Hot2000V2" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Hot2000V2" class="form-control" />
+                <span asp-validation-for="Hot2000V2" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Hot2000Vr" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Hot2000Vr" class="form-control" />
+                <span asp-validation-for="Hot2000Vr" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Hot4000V2" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Hot4000V2" class="form-control" />
+                <span asp-validation-for="Hot4000V2" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Hot4000Vr" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Hot4000Vr" class="form-control" />
+                <span asp-validation-for="Hot4000Vr" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Hot6000V2" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Hot6000V2" class="form-control" />
+                <span asp-validation-for="Hot6000V2" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Hot6000Vr" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Hot6000Vr" class="form-control" />
+                <span asp-validation-for="Hot6000Vr" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Hot8000V2" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Hot8000V2" class="form-control" />
+                <span asp-validation-for="Hot8000V2" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Hot8000Vr" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Hot8000Vr" class="form-control" />
+                <span asp-validation-for="Hot8000Vr" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Weight" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Weight" class="form-control" />
+                <span asp-validation-for="Weight" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

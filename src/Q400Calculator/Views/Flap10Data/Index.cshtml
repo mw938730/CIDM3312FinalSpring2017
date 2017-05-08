@@ -1,0 +1,183 @@
+@model IEnumerable<Q400Calculator.Models.Flap10Data>
+
+@{
+    ViewData["Title"] = "Index";
+    List<Q400Calculator.Models.Flap10Data> values = (List<Q400Calculator.Models.Flap10Data>)Model;
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<p>
+    The third weight for the 10 flap table is @values[2].Weight
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cold0V2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cold0Vr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cold10000V2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cold10000Vr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cold2000V2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cold2000Vr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cold4000V2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cold4000Vr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cold6000V2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cold6000Vr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cold8000V2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cold8000Vr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hot0V2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hot0Vr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hot10000V2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hot10000Vr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hot2000V2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hot2000Vr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hot4000V2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hot4000Vr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hot6000V2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hot6000Vr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hot8000V2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hot8000Vr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weight)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cold0V2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cold0Vr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cold10000V2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cold10000Vr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cold2000V2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cold2000Vr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cold4000V2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cold4000Vr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cold6000V2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cold6000Vr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cold8000V2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cold8000Vr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hot0V2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hot0Vr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hot10000V2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hot10000Vr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hot2000V2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hot2000Vr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hot4000V2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hot4000Vr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hot6000V2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hot6000Vr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hot8000V2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hot8000Vr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

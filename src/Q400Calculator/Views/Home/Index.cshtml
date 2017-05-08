@@ -1,0 +1,95 @@
+﻿@using Q400Calculator.Models;
+@model FlightViewModel
+@{
+    ViewData["Title"] = "Home Page";
+    List<FlapData> fd = Model.FlapData;
+    List<Flap10Data> fd10 = Model.Flap10Data;
+    List<Flap15Data> fd15 = Model.Flap15Data;
+    Random rand = new Random();
+    Model.WindDirection = rand.Next(0, 359);
+    Model.RunwayDirection = rand.Next(0, 359);
+
+}
+<br />
+<br />
+<div class="text-center">
+    <h1>Welcome Pilots</h1>
+
+    <h3>To the Captain's BlackBook Calculator App</h3>
+    <br />
+    <p>Please Input the Data</p>
+
+
+    
+    <div class="form-horizontal">
+        <form asp-controller="Home" asp-action="SaveResults">
+            <div class="form-group">
+                <label asp-for="@Model.PilotName">Enter Captain Name</label>
+                <input type="text" asp-for="@Model.PilotName" />
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.RealAltitude">Altitude(ft)</label>
+                <input type="text" asp-for="@Model.RealAltitude" />
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.RealWeight">Weight(KG)</label>
+                <input type="text" asp-for="@Model.RealWeight" />
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.RealDistance">Distance(NM)</label>
+                <input type="text" asp-for="@Model.RealDistance" />
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.RunwayDirection">RunwayDirection(0-360deg)</label>
+                <input type="text" asp-for="@Model.RunwayDirection" />
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.OutsideAirTemp">Outside Air Temp(deg C)</label>
+                <input type="text" asp-for="@Model.OutsideAirTemp" />
+            </div>
+                    <hr />
+                    <p>TakeoffFlaps?</p>
+            
+                    <select asp-for="@Model.TakeoffFlaps">
+                        <option value="15">15 Degrees</option>
+                        <option value="10">10 Degrees</option>
+                        <option value="5">5 Degrees</option>
+                    </select>
+                    <hr />
+                    <p>LandingFlaps?</p>
+                    <select asp-for="@Model.LandingFlaps">
+                        <option value="35">35 Degrees</option>
+                        <option value="15">15Degrees</option>
+                        <option value="10">10Degrees</option>
+                        <option value="5">5Degrees</option>
+                    </select>
+                    <hr />
+                    <p>Icing?</p>
+                    <select asp-for="@Model.Icing">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <hr />
+                    <p>Rain?</p>
+                    <select asp-for="@Model.Rain">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>Rain?
+                    </select>
+                    <hr />
+                    <p>Snow?</p>
+                    <select asp-for="@Model.Snow">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>Snow?
+                    </select>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Submit" class="btn btn-success" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+

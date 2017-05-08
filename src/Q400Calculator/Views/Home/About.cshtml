@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Q400Calculator.Models.FlightViewModel>
+    @{
+        ViewData["Title"] = "About";
+    }
+    <h2>@ViewData["Title"].</h2>
+    <h3>@ViewData["Message"]</h3>
+
+    <form asp-action="Create">
+        <div class="form-horizontal">
+            <h4>Enter Flight Data</h4>
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ClimbData" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Vclmb" class="form-control" />
+                    <span asp-validation-for="Vclmb" class="text-danger" />
+                </div>
+            </div>
+        </div>
+    </form>
